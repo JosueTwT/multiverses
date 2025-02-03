@@ -1,0 +1,247 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    color: #9b59b6;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #9b59b6;
+}
+
+/* Sección principal */
+.hero {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #9b59b6;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #8e44ad;
+    transform: scale(1.1); /* Aumento del tamaño */
+    box-shadow: 0 0 15px #9b59b6; /* Efecto de brillo */
+}
+
+/* Sección de información - Quiénes somos */
+.info {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #9b59b6; /* Morado */
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: #fff; /* Blanco para el texto */
+    margin: 0 auto;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Sección de proyectos */
+.projects {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #9b59b6;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    margin-top: 15px;
+    color: #9b59b6;
+}
+
+/* Sección de testimonios */
+.testimonials {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #9b59b6;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+}
+
+/* Sección para unirse */
+.join-community {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.join-community h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #9b59b6;
+}
+
+.join-community p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Sección para el equipo */
+.team {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #9b59b6;
+}
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten a varias filas */
+    justify-content: space-around; /* Espacia los bloques de forma equitativa */
+    gap: 20px; /* Añade espacio entre los bloques */
+}
+
+.team-member {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(33.33% - 20px); /* Esto asegura que tres bloques se acomoden en una fila */
+    text-align: center;
+    box-sizing: border-box; /* Para incluir el padding y borde en el ancho total */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efectos al hacer hover */
+}
+
+.team-member img {
+    width: 120px; /* Tamaño de la imagen */
+    height: 120px;
+    border-radius: 50%; /* Imagen circular */
+    margin-bottom: 15px; /* Separación entre la imagen y el texto */
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    color: #9b59b6; /* Morado */
+}
+
+.team-member p {
+    color: #fff; /* Blanco para el texto */
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Efecto de levantar la tarjeta */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Efecto de sombra más fuerte */
+}
